@@ -37,19 +37,19 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.nav_hymns:
-                        // Handle Home click
-                        return true;
-                    case R.id.nav_category:
-                        // Handle Hymns click
-                        return true;
-                    case R.id.nav_search:
-                        // Handle Search click
-                        return true;
-                    case R.id.nav_settings:
-                        // Handle Settings click
-                        return true;
+                int id = item.getItemId();
+                if (id == R.id.nav_hymns) {
+                    // Handle Home click
+                    return true;
+                } else if (id == R.id.nav_category) {
+                    // Handle Hymns click
+                    return true;
+                } else if (id == R.id.nav_search) {
+                    // Handle Search click
+                    return true;
+                } else if (id == R.id.nav_settings) {
+                    // Handle Settings click
+                    return true;
                 }
                 return false;
             }
@@ -59,6 +59,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void prepareHymns() {
+        hymnList.add(new Hymn("Amazing Grace", "John Newton, 1779"));
+        hymnList.add(new Hymn("How Great Thou Art", "Carl Boberg, 1885"));
+        hymnList.add(new Hymn("Be Thou My Vision", "Traditional, 6th Century"));
+        hymnList.add(new Hymn("Amazing Grace", "John Newton, 1779"));
+        hymnList.add(new Hymn("How Great Thou Art", "Carl Boberg, 1885"));
+        hymnList.add(new Hymn("Be Thou My Vision", "Traditional, 6th Century"));
+        hymnList.add(new Hymn("Amazing Grace", "John Newton, 1779"));
+        hymnList.add(new Hymn("How Great Thou Art", "Carl Boberg, 1885"));
+        hymnList.add(new Hymn("Be Thou My Vision", "Traditional, 6th Century"));
         hymnList.add(new Hymn("Amazing Grace", "John Newton, 1779"));
         hymnList.add(new Hymn("How Great Thou Art", "Carl Boberg, 1885"));
         hymnList.add(new Hymn("Be Thou My Vision", "Traditional, 6th Century"));

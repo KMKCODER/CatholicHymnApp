@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Catholic Hymns</string>
+    <string name="app_name">Catholic Hymn Book</string>
     <string name="welcome_message">Welcome to the Catholic Hymn Book</string>
     <string name="get_started">Get Started</string>
     <string name="settings">Settings</string>
