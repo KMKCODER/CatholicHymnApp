@@ -1,19 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="305dp"
+        android:layout_height="144dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/app_logo" />
 
     <TextView
+        android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="@string/welcome_message"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/light_primary"
+        android:layout_marginTop="120sp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/get_started_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="@string/get_started"
+        android:textSize="32sp"
+        />
+
+</RelativeLayout>

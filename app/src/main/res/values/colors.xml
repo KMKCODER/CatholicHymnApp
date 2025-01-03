@@ -2,4 +2,17 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Added these-->
+    <!-- light colors -->
+    <color name="light_primary">#221F59</color>
+    <color name="light_primary_variant">#3700B3</color>
+    <color name="light_background">#FFFFFF</color>
+    <color name="light_on_background">#000000</color>
+
+    <!-- dark colors -->
+    <color name="dark_primary">#BB86FC</color>
+    <color name="dark_primary_variant">#3700B3</color>
+    <color name="dark_background">#121212</color>
+    <color name="dark_on_background">#FFFFFF</color>
 </resources>

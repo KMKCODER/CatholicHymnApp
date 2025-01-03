@@ -1,8 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.CatholicHymnApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <style
+        name="Base.Theme.CatholicHymnApp"
+        parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/light_primary</item>
+        <item name="colorPrimaryVariant">@color/light_primary_variant</item>
+<!--        <item name="colorBackground">@color/light_background</item>-->
+        <item name="colorOnBackground">@color/light_on_background</item>
+
     </style>
 
     <style name="Theme.CatholicHymnApp" parent="Base.Theme.CatholicHymnApp" />
