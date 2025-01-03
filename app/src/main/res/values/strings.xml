@@ -2,4 +2,11 @@
     <string name="app_name">Catholic Hymns</string>
     <string name="welcome_message">Welcome to the Catholic Hymn Book</string>
     <string name="get_started">Get Started</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="hymns">Hymns</string>
+    <string name="home">Home</string>
+    <string name="category">Category</string>
+    <string name="hymn_title">Hymn Title</string>
+    <string name="subtitle_or_description">Subtitle or Description</string>
 </resources>
